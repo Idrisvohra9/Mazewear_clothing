@@ -26,26 +26,10 @@
             </div>
 
             <div class="col-md-6 col-sm-6 col-xs-6">
-                @*<div class="account">
-               <ul>
-                   <li>
-                       <div class="hidden-xs">
-                           <h4><a>Call</a></h4>
-                           <p>018##-######</p>
-                       </div>
-
-                       <div class="visible-xs">
-
-                           <p>018##-######</p>
-                       </div>
-
-                   </li>
-               </ul>
-
-            </div>*@
+                
                 <ul class="nav navbar-nav navbar-right">
                     <li class="dropdown">
-                        <a data-toggle="dropdown" class="dropdown-toggle" href="#">Cart(3) <b class="caret"></b></a>
+                        <a data-toggle="dropdown" class="dropdown-toggle" href="#">Cart <b class="caret"></b></a>
                         <ul class="dropdown-menu">
                             @if (Session["cart"] != null)
                             {
@@ -57,7 +41,7 @@
                                 }
                             }
                             <li class="divider"></li>
-                            <li><a href="#">IT</a></li>
+                            <li><a href="#">CheckOut</a></li>
                         </ul>
                     </li>
                 </ul>
@@ -80,6 +64,7 @@
                 </div>
             </div>
         </div>
+
 
         @RenderBody()
         <hr />
