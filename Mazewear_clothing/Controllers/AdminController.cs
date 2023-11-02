@@ -43,10 +43,10 @@ namespace Mazewear_clothing.Controllers
             return UpdateCategory(0);
         }
 
-        public ActionResult UpdateCategory(int categoryId=0)
+        public ActionResult UpdateCategory(int categoryId)
         {
             CategoryDetail cd;
-            if (categoryId != 0)
+            if (categoryId != null)
             {
                 cd = JsonConvert.DeserializeObject<CategoryDetail>(JsonConvert.SerializeObject(_unitOfWork.GetRepositoryInstance<Tbl_Category>().GetFirstorDefault(categoryId)));
             }
